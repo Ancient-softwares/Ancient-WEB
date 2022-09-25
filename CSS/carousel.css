@@ -1,0 +1,141 @@
+  
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  .container {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 4em;
+    padding-bottom: 6em;
+  }
+  
+  .card-carousel {
+    --card-width: 90%;
+    --card-max-width: 350px;
+    --card-height: 380px;
+    --carousel-min-width: 850px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .5s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .5s ease;
+  }
+  
+  .card-carousel .card {
+    background: #141414;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid #6c58aa;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url("../IMG/perez.jpg");
+  }
+  .card:nth-of-type(2) .image-container {
+    background-image: url("../IMG/vicente.jpg")
+  }
+  .card:nth-of-type(3) .image-container {
+    background-image: url("../IMG/ore.jpg")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("../IMG/barreto.jpg")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("../IMG/bruno.jpg")
+  }
+  .card:nth-of-type(6) .image-container {
+    background-image: url("../IMG/Scarabelli.jpg")
+  }
+  .card:nth-of-type(7) .image-container {
+    background-image: url("../IMG/dias.jpg")
+  }
+  
+  
+  
+  .image-container {
+    width: 11em;
+    height: 11em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 10%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 110%;
+    border: solid 1px #6c58aa;
+    border-radius: 10%;
+    position: absolute;
+    top: calc(-5% - 3px);
+    left: calc(-5% - 3px);
+  }
+
+  .SeeMore button{
+    width: 14em;
+    border: none;
+    border-radius: 1.6em;
+    padding: 4%;
+    background-color: #6c58aa;
+    color: #141414;
+    transition: 1.5s;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+
+  .SeeMore button:hover{
+    color: #F6F6F6;
+  }
+
+  .titleCard{
+    color: #f6f6f6;
+    padding-bottom: 6%;
+  }
+
+  

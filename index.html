@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./IMG/logo.png">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/footerDeDoido.css">
+  <link rel="stylesheet" href="./CSS/Responsive.css">
+  <link rel="stylesheet" href="./CSS/carousel.css">
+  <link rel="stylesheet" href="./CSS/modal.css">
+
+  <title>Ancient</title>
+</head>
+
+<body>
+  <!--NavBar-->
+  <header>
+    <div class="container">
+      <img src="./IMG/iconWhite.png" alt="Rocketseat" />
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#SobreNos">Sobre nós</a>
+            </li>
+            <li>
+              <a href="#Equipe">Equipe</a>
+            </li>
+            <li>
+              <a href="#Tecnologia">Tecnologias</a>
+            </li>
+            <li>
+              <a href="#Servicos">Serviços</a>
+            </li>
+            <li>
+              <a href="#Contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--NavBar-->
+
+  <!--Frase Filosofica do Gui-->
+  <div class="banner">
+
+    <img src="./IMG/back2.jpg">
+    <section class="hero">
+      <div class="container">
+        <div class="Frase">
+          <div>
+            <h1> “Da dúvida á ideia, da ideia á solução.” </h1>
+            <p>Scarabelli Quadros</p>
+          </div>
+        </div>
+        <!--img src="./IMG/melhores-tecnologias.svg" alt="" /-->
+      </div>
+    </section>
+  </div>
+
+  <main>
+
+    <div class="SobreNos" id="SobreNos">
+      <h2>Quem Somos</h2>
+      <p id="slide" class="slide-in">
+        A empresa Ancient fundada em 2022 é atuante no setor de informática
+        e é especializada no desenvolvimento de softwares
+        para empresas de baixo e médio porte.
+      </p>
+    </div>
+
+    <div class="Equipe" id="Equipe">
+
+      <h2>Equipe</h2>
+
+      <div class="container">
+        <div class="card-carousel">
+          <div class="card" id="1">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Glauber Perez (Back-End)</p>
+            <div class="SeeMore">
+              <button id="myBtn6"> Conhecer Programador</button>
+            </div>
+          </div>
+          <div class="card" id="2">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Ricardo Vicente (Full-Stack)</p>
+            <div class="SeeMore">
+              <button id="myBtn4"> Conhecer Programador</button>
+            </div>
+          </div>
+          <div class="card" id="3">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Kauan Amorim Parreira (Front-End)</p>
+            <div class="SeeMore">
+              <button id="myBtn2"> Conhecer Programador</button>
+            </div>
+          </div>
+          <div class="card" id="4">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Athirson Silva Barreto (Back-End)</p>
+            <div class="SeeMore">
+              <button id="myBtn1"> Conhecer Programador</button>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+
+          </div>
+          <div class="card" id="5">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Bruno Teixeira Pires (Front-End)</p>
+            <div class="SeeMore">
+              <button id="myBtn3"> Conhecer Programador</button>
+            </div>
+          </div>
+          <div class="card" id="6">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Guilerme Scarabelli Quadros (DBA)</p>
+            <div class="SeeMore">
+              <button id="myBtn5"> Conhecer Programador</button>
+            </div>
+          </div>
+          <div class="card" id="7">
+            <div class="image-container"></div>
+            <p class="titleCard">
+              Caique Dias de Melo (Back-End)</p>
+            <div class="SeeMore">
+              <button id="myBtn7"> Conhecer Programador</button>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+      </div>
+    </div>
+
+
+    <div class="Tecnologia" id="Tecnologia">
+      <h2>Tecnologias</h2>
+      <section class="cardServicos">
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/js.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              JavaScript
+            </p>
+          </div>
+        </div>
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/php.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              PHP
+            </p>
+          </div>
+        </div>
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/css.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              CSS
+            </p>
+          </div>
+        </div>
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/laravel.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Laravel
+            </p>
+          </div>
+        </div>
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/mysql.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              MySQL
+            </p>
+          </div>
+        </div>
+        <div class="cardTec">
+          <div class="image">
+            <img src="./IMG/reactN.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              React Native
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="Servicos" id="Servicos">
+      <h2>Serviços</h2>
+      <section class="cardServicos">
+        <div class="cardServico">
+          <div class="image">
+            <img src="./IMG/webART.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Site uma solução WEB.
+            </p>
+            <div class="info">
+              <p class="price text--medium">Contratar</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardServico">
+          <div class="image">
+            <img src="./IMG/appART.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Aplicativo uma solução Mobile.
+            </p>
+            <div class="info">
+              <p class="price text--medium">Contratar</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardServico">
+          <div class="image">
+            <img src="./IMG/wpART.png" />
+          </div>
+          <div class="content">
+            <p class="title text--medium">
+              Combo com soluçoês WEB e Mobile.
+            </p>
+            <div class="info">
+              <p class="price text--medium">Contratar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="Contato" id="Contato">
+      <div class="footer-content">
+        <h3>Ancient</h3>
+        <p>Nossa empresa sempre busca o melhor para os nossos funcionarios e para os nossos clientes.</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+
+        </ul>
+      </div>
+      <div class="footer-bottom">
+      </div>
+    </div>
+  </footer>
+
+  <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="./JS/hamburguer.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./JS/back-top.js"></script>
+  <script src="./JS/cardServico.js"></script>
+  <script src="./JS/carousel.js"></script>
+  <script src="./JS/modal.js"></script>
+
+</body>
+
+</html>
