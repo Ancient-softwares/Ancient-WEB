@@ -1,100 +1,144 @@
-@media(max-width:1317px){
-    html{
-        font-size: 50%;
-    }
-    .banner {
-      height:50em;
-    }
+@media(max-width:1317px) {
+  html {
+    font-size: 50%;
+  }
+
+  .banner {
+    height: 55em;
+  }
 }
-@media(max-width:806px){
-    header nav ul li a{
-        font-size: 1.5rem;
-    }
+
+@media(max-width:806px) {
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
 }
-@media(max-width:790px){
-    .hero .container{
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero .container img{
-        text-align: center;
-        order: -1;
-    }
-    section.hero img{
-        width: 50%;
-        transform: translate(55%, -10%);
-      }
-    .cardServicos{
-        grid-gap: 2px;
-    }
-    .Equipe .cardEquipe{
-      width: 90%;
-      padding-left: 10%;
-      transform: translate(5%);
-    }
+
+@media(max-width:790px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .container img {
+    text-align: center;
+    order: -1;
+  }
+
+  section.hero img {
+    width: 50%;
+    transform: translate(55%, -10%);
+  }
+
+  .cardServicos {
+    grid-gap: 2px;
+  }
+
+  .Equipe .cardEquipe {
+    width: 90%;
+    padding-left: 10%;
+    transform: translate(5%);
+  }
 }
-@media(max-width:706px){
-    nav{
-        display: none;
-      }
-      .one, .two, .three{
-        background-color: #fff;
-        height: 5px;
-        width: 100%;
-        margin: 9px;
-    
-        transition-duration: 0.5s;
-      }
-    
-      .menu-toggle{
-        width: 40px;
-        height: 30px;
-        margin-right: 40px;
-      }
-    
-      /*FullScreen*/
-      .menu-section.on{
-        position: absolute;
-        top: 0;
-        left: 0;
-    
-        width: 100vw;
-        height: 110vh;
-    
-        background-color: #0f171e;
-    
-        z-index: 10; /*Utilizado para camadas*/
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .menu-section.on nav{
-        display: block;
-      }
-      .menu-section.on .menu-toggle{
-        position: absolute;
-        right: 22px;
-        top: 15px;
-      }
-      .menu-section.on .menu-toggle .one{
-        transform: rotate(50deg) translate(35px, 5px);
-      }
-      .menu-section.on .menu-toggle .two{
-        opacity: 0; /*Ocultou a barra do meio, na real tiro a opacidade*/
-      }
-      .menu-section.on .menu-toggle .three{
-        transform: rotate(-50deg) translate(10px, 15px);
-      }
-      
-      .menu-section.on nav ul{
-        text-align: center;
-        display: block;
-      }
-      .menu-section.on nav ul a{
-        transition-duration: 0.5s;
-        font-size: 3rem;
-        line-height: 4rem;
-        display: block;
-      }
+
+@media(max-width:706px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 9px;
+
+    transition-duration: 0.5s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+  }
+
+  /*FullScreen*/
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 110vh;
+
+    background-color: #0f171e;
+
+    z-index: 10;
+    /*Utilizado para camadas*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 22px;
+    top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(50deg) translate(35px, 5px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+    /*Ocultou a barra do meio, na real tiro a opacidade*/
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-50deg) translate(10px, 15px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+}
+
+@media(max-width:395px) {
+  .Frase {
+    margin-top: 50%;
+    font-size: 45%;
+    text-align: center;
+  }
+  .banner {
+    height: 0%;
+    position:relative;
+    width:100%;
+    overflow: hidden;
+  }
+  section.hero {
+    position: relative;
+    margin: 10% 0px;
+  }
+  .SobreNos h2{
+    padding-top: 0%;
+   }
+   #text  {
+    margin-top: 8%;
+}
+
 }

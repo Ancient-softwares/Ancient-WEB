@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./CSS/Responsive.css">
   <link rel="stylesheet" href="./CSS/carousel.css">
   <link rel="stylesheet" href="./CSS/modal.css">
+  <link rel="stylesheet" href="./CSS/textStyle.css">
 
   <title>Ancient</title>
 </head>
@@ -77,11 +78,54 @@
 
     <div class="SobreNos" id="SobreNos">
       <h2>Quem Somos</h2>
-      <p id="slide" class="slide-in">
-        A empresa Ancient fundada em 2022 é atuante no setor de informática
-        e é especializada no desenvolvimento de softwares
-        para empresas de baixo e médio porte.
-      </p>
+      <div class="center">
+        <p id="text">
+          A empresa Ancient fundada em 2022 é atuante no setor de informática
+          e é especializada no desenvolvimento de softwares
+          para empresas de baixo e médio porte.
+        </p>
+      </div>
+      <div id="slide" class="slide-in">
+
+        <div class="BoxTime">
+          <div class="timeline">
+            <div class="line"></div>
+
+            <div class="section">
+              <div class="bead"></div>
+              <div class="contentH">
+                <h2>FEVEREIRO, 2022</h2>
+                <p>Criação da Startup.</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="bead"></div>
+              <div class="contentH">
+                <h2>MARÇO, 202</h2>
+                <p> Escolha do nome e logotipo.</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="bead"></div>
+              <div class="contentH">
+                <h2>ABRIL, 2022</h2>
+                <p>Escolha do tema do projeto.</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <div class="bead"></div>
+              <div class="contentH">
+                <h2>AGOSTO, 2022</h2>
+                <p>Início do primeiro projeto da Ancient (NextMeal).</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="Equipe" id="Equipe">
@@ -90,20 +134,21 @@
 
       <div class="container">
         <div class="card-carousel">
+          <!-- Começo dos Cards -->
           <div class="card" id="1">
             <div class="image-container"></div>
             <p class="titleCard">
-              Glauber Perez (Back-End)</p>
+              Glauber Dos Santos Perez (Back-End)</p>
             <div class="SeeMore">
-              <button id="myBtn6"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal7"> Conhecer Programador</button>
             </div>
           </div>
           <div class="card" id="2">
             <div class="image-container"></div>
             <p class="titleCard">
-              Ricardo Vicente (Full-Stack)</p>
+              Ricardo Da Silva Vicente (Full-Stack)</p>
             <div class="SeeMore">
-              <button id="myBtn4"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal6"> Conhecer Programador</button>
             </div>
           </div>
           <div class="card" id="3">
@@ -111,7 +156,7 @@
             <p class="titleCard">
               Kauan Amorim Parreira (Front-End)</p>
             <div class="SeeMore">
-              <button id="myBtn2"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal2"> Conhecer Programador</button>
             </div>
           </div>
           <div class="card" id="4">
@@ -119,25 +164,15 @@
             <p class="titleCard">
               Athirson Silva Barreto (Back-End)</p>
             <div class="SeeMore">
-              <button id="myBtn1"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal1"> Conhecer Programador</button>
             </div>
-          </div>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
-            </div>
-
           </div>
           <div class="card" id="5">
             <div class="image-container"></div>
             <p class="titleCard">
-              Bruno Teixeira Pires (Front-End)</p>
+              Bruno Teixeira Pires (Front-End e Designer)</p>
             <div class="SeeMore">
-              <button id="myBtn3"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal3"> Conhecer Programador</button>
             </div>
           </div>
           <div class="card" id="6">
@@ -145,7 +180,7 @@
             <p class="titleCard">
               Guilerme Scarabelli Quadros (DBA)</p>
             <div class="SeeMore">
-              <button id="myBtn5"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal4"> Conhecer Programador</button>
             </div>
           </div>
           <div class="card" id="7">
@@ -153,9 +188,272 @@
             <p class="titleCard">
               Caique Dias de Melo (Back-End)</p>
             <div class="SeeMore">
-              <button id="myBtn7"> Conhecer Programador</button>
+              <button class="btn" data-target="#modal5"> Conhecer Programador</button>
             </div>
           </div>
+          <!-- FIM DOS CARDS -->
+
+          <!-- Start Modals -->
+          <div id="modal1" class="modal">
+            <!-- Modal content 01 -->
+            <div class="header">
+              <div class="titleModal"> Athirson Silva Barreto</div>
+              <button class="btn modal-btn" data-target="#modal1">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 19 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p> ADM (ETEC) e DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Superior:</label>
+                <div class="TextBody">
+                  <p> ADS (UNINOVE)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> JavaScript, Phyton, PHP, Linux</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal2" class="modal">
+            <!-- Modal content 02 -->
+            <div class="header">
+              <div class="titleModal"> Kauan Amorim Parreira</div>
+              <button class="btn modal-btn" data-target="#modal2">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 20 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Superior:</label>
+                <div class="TextBody">
+                  <p> TT (FATEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> JavaScript, CSS, PHP, Java</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal3" class="modal">
+            <!-- Modal content 03 -->
+            <div class="header">
+              <div class="titleModal"> Bruno Teixeira Pires</div>
+              <button class="btn modal-btn" data-target="#modal3">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 17 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> JavaScript, CSS, PHP, Photoshop</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal4" class="modal">
+            <!-- Modal content 04 -->
+            <div class="header">
+              <div class="titleModal"> Guilerme Scarabelli Quadros </div>
+              <button class="btn modal-btn" data-target="#modal4">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 18 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> MySQL, PHP, SQL Serve, Java</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal5" class="modal">
+            <!-- Modal content 05 -->
+            <div class="header">
+              <div class="titleModal"> Caique Dias de Melo </div>
+              <button class="btn modal-btn" data-target="#modal5">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 18 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> Java, PHP, JavaScript, CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal6" class="modal">
+            <!-- Modal content 06 -->
+            <div class="header">
+              <div class="titleModal"> Ricardo Da Silva Vicente </div>
+              <button class="btn modal-btn" data-target="#modal6">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 17 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p>JavaScript, CSS, PHP, Java</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="modal7" class="modal">
+            <!-- Modal content 03 -->
+            <div class="header">
+              <div class="titleModal"> Glauber Dos Santos Perez </div>
+              <button class="btn modal-btn" data-target="#modal7">&times;</button>
+            </div>
+            <div class="mBody">
+              <div class="InfoBody">
+                <label>Idade:</label>
+                <div class="TextBody">
+                  <p> 17 Anos</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Técnico:</label>
+                <div class="TextBody">
+                  <p>DS (ETEC)</p>
+                </div>
+              </div>
+              <div class="InfoBody">
+                <label>Tecnologias:</label>
+                <div class="TextBody">
+                  <p> PHP, Python, Linux, JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <div class="FooterModal">
+              <ul class="SocialModal">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- The Modal Back -->
+          <div id="overlay"></div>
         </div>
         <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
       </div>
@@ -287,7 +585,6 @@
           <li><a href="#"><i class="fa fa-youtube"></i></a></li>
           <li><a href="#"><i class="fa fa-github"></i></a></li>
           <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-
         </ul>
       </div>
       <div class="footer-bottom">
@@ -300,8 +597,9 @@
   <script src="./JS/hamburguer.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./JS/back-top.js"></script>
-  <script src="./JS/cardServico.js"></script>
   <script src="./JS/carousel.js"></script>
+  <script src="./JS/TextStyle.js"></script>
+  <script src="./JS/timeline.js"></script>
   <script src="./JS/modal.js"></script>
 
 </body>

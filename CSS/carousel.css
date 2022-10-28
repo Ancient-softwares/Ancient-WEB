@@ -62,35 +62,35 @@
     border: solid #6c58aa;
   }
   
+  
   .card.highlight {
     filter: brightness(1)
   }
   
   
   .card:nth-of-type(1) .image-container {
-      background-image: url("../IMG/perez.jpg");
+      background-image: url("../IMG/perez2.0.jpg");
   }
   .card:nth-of-type(2) .image-container {
     background-image: url("../IMG/vicente.jpg")
   }
   .card:nth-of-type(3) .image-container {
-    background-image: url("../IMG/ore.jpg")
+    background-image: url("../IMG/ore2.0.jpg")
   }
   .card:nth-of-type(4) .image-container {
-    background-image: url("../IMG/barreto.jpg")
+    background-image: url("../IMG/barreto2.0.jpg")
   }
   .card:nth-of-type(5) .image-container {
-    background-image: url("../IMG/bruno.jpg")
+    background-image: url("../IMG/bruno3.0.jpg")
   }
   .card:nth-of-type(6) .image-container {
     background-image: url("../IMG/Scarabelli.jpg")
   }
   .card:nth-of-type(7) .image-container {
-    background-image: url("../IMG/dias.jpg")
+    background-image: url("../IMG/dias2.0.jpg")
   }
   
-  
-  
+
   .image-container {
     width: 11em;
     height: 11em;
@@ -115,6 +115,37 @@
     position: absolute;
     top: calc(-5% - 3px);
     left: calc(-5% - 3px);
+  }
+
+.image-container:before, .image-container:after {
+  border-radius: 10%;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #b508e09a, #0000ff, #6c58aa,#9004b39a, #8a2be2, #9004b39a, 
+    #0000ff, #6c58aa,#9004b39a, #8a2be2);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 25s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .image-container:after {
+    filter: blur(50px);
   }
 
   .SeeMore button{

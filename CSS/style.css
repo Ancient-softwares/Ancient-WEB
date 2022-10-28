@@ -60,7 +60,7 @@ header nav ul li a {
   position: relative;
 }
 
-a:after {
+header a:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -73,11 +73,11 @@ a:after {
   transition: transform .3s ease-in-out;
 }
 
- a:hover {
+ header a:hover {
   color: #a28be9;
 }
 
- a:hover:after {
+ header a:hover:after {
     width: 100%;
     transform-origin: left;
     transform: scaleX(1);
@@ -91,7 +91,7 @@ h2{
 }
 section.hero{
   position: relative;
-    margin: 385px 10px;
+    margin: 20% 10px;
 
 }
 section.hero .container {
@@ -111,7 +111,7 @@ section.hero p {
 section.hero h1{
   color: #F6F6F6;
   text-transform: uppercase;  
-  font-size: 50px;
+  font-size: 4em;
   font-family: inherit;
   line-height: 5.5rem;
   text-shadow: 5px 1px #6c58aa;
@@ -119,14 +119,14 @@ section.hero h1{
 }
 
 .Frase{
-   width: 90%;
+   width: 95%;
    max-width: 980px;
    margin: auto;
    text-align: center;
 } 
 
 .banner {
-	height:55em;
+	height:100%;
 	position:relative;
 	width:100%;
 	overflow: hidden;
@@ -241,14 +241,13 @@ main p{
 
 .SobreNos #slide {
   color: #fff;
-  padding: 4em;
   text-align: center;
   font-size: 25px;
   max-width: 985px;
   margin: auto;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
-  padding-bottom: 5em;
+  padding-bottom: 0.5em;
 }
 
 .slide-in {

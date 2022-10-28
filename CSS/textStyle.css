@@ -1,0 +1,145 @@
+
+/*  TEXT QUEM SOMOS */
+.center {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text  {
+    color: #F6F6F6;
+    width: 80%;
+    font-size: 0.5em;
+    display: block;
+    text-align: center;
+}
+
+.char {
+    font-size: 4em;
+    height: 40px;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+}
+
+@keyframes an {
+    from {
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.BoxTime{
+    padding: 2rem;
+    padding-bottom: 2px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.timeline {
+    position: relative;
+   min-height: 150px;
+}
+
+
+.line {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    bottom: -50px;
+    background-color: #6c58aa;
+    animation: Line 2s linear infinite;
+    display: none;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .line::before,
+  .line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #6c58aa;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50%;
+  }
+
+  .line:after {
+    bottom: 0;
+}
+
+  @keyframes Line {
+  0% {
+    background: linear-gradient(30deg, #8a06c7, #7309c9, #6c58aa, #8a2be2);
+  }
+  100% {
+    background: linear-gradient(30deg, #6c58aa, #9900ff,#8a2be2, #9a06c7);
+  }
+}
+
+.section {
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.section:nth-child(odd) {
+    flex-direction: row-reverse;
+    transform: translateX(40%);
+}
+
+.bead {
+    position: absolute;
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: #6c58aa;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+  
+  /* Container around content */
+  .contentH{
+    width: calc(50% - 2rem);
+    padding: 20px 0px;
+    background-color: #141414;
+    color: #F6F6F6;
+    position: relative;
+    border-radius: 6px;
+}
+
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+
+  .contentH H2{
+    padding-top: 0%;
+   color: #6c58aa;
+  }
+
+  .contentH p {
+    text-align: center;
+  }
+  

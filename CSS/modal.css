@@ -1,38 +1,162 @@
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.btn {
+  padding: 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.modal-btn {
+  color: #F6F6F6;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+}
+
+.modal-btn:hover {
+  color: #6c58aa;
+}
+
+.modal {
+  width: 40%;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.5s ease-in-out;
+  border: 2px solid #6c58aa;
+  border-radius: 10px;
+  background-color: #141414;
+  z-index: 2;
+}
+
+.modal.active {
+  top: 40%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem, 1rem;
+  background-color: #141414;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom: solid 2px #6c58aa;
+}
+
+.titleModal {
+  color: #F6F6F6;
+  padding: 2% 3%;
+  font-size: 1.8em;
+}
+
+.mBody {
+  padding: 2.5%;
+  color: #F6F6F6;
+  background-color: #141414;
+  transition: color 0.25s;
+}
+
+.InfoBody {
+  display: flex;
+  width: 100%;
+  padding: 1%;
+}
+
+.InfoBody label {
+  color: #6c58aa;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  padding-left: 2%;
+}
+
+.TextBody {
+  width: 100%;
+}
+.TextBody p {
+  color: #F6F6F6;
+  font-size: 1.5em;
+  padding-left: 2.5%;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+#overlay.active {
+  display: block;
+}
+
+.FooterModal {
+  border-top: solid 2px #6c58aa;
+}
+
+.SocialModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SocialModal li {
+  margin: 10px;
+  list-style: none;
+}
+
+.SocialModal a i {
+  font-size: 2em;
+  text-decoration: none;
+  color: #000;
+}
+
+.SocialModal a:hover i {
+  color: #f6f6f6;
+}
+
+.SocialModal {
+  position: relative;
+}
+
+.SocialModal:before, .SocialModal:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #b508e09a, #0000ff, #6c58aa,#9004b39a, #8a2be2, #9004b39a, 
+    #0000ff, #6c58aa,#9004b39a, #8a2be2);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 25s linear infinite;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.SocialModal:after {
+  filter: blur(50px);
 }
