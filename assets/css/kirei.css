@@ -1,0 +1,171 @@
+body{
+    background-color: #DCDCDC;
+}
+
+.goTop {
+    content: '#s';
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: center;
+    color: #826dae;
+    font-family: fantasy;
+}
+
+h4 {
+    font-size: 30px;
+    color: #826dae;
+    font-family: fantasy;
+}
+
+.servicos{
+    margin-top: 2%;
+    background-color: #DCDCDC;
+    margin-bottom: 4%;
+}
+
+.boxS{
+    padding: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+
+}
+
+.btnCard {
+    width: 100%;
+    height: auto;
+    padding: 0.5%;
+    background-color: #826dae;
+    color: #fff;
+    font-family:Tahoma;
+    font-size: 12pt;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    padding: 5.5% 1.5%;
+    transform: scale(1.1);
+}
+
+.sobreNos{
+    background-color: #000;
+    width: 100%;
+    height: 85%;
+    color: #DCDCDC;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.sobreNos h3{
+    padding: 2%;
+}
+
+.sobreNos .box p{
+    font-size: 15pt;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.box{
+    width:50%;
+    height: 15%;
+    padding: 2%;
+    position: relative;
+    background-color:#000;
+    animation-name: dare;
+    animation: dare 5s both;
+    animation-timing-function: ease;
+}
+
+@keyframes dare {
+    0% {background-color: #000; left:0%;}
+    50% {background-color: #000; left: 50%;}
+    80% {background-color: #000; left: 25%;}
+    100% {background-color: #000; left: 25%;}
+}
+
+.tecnologias{
+    width: auto;
+    height: auto;
+}
+
+.tecnologias .card{
+    background: #8826daaa;
+}
+
+
+.equipe{
+	position:relative;
+	width:100%;
+    height: auto;
+	overflow: hidden;
+}
+
+.equipe .card{
+    background: #cc84e770;
+    margin-bottom: 10%;
+}
+
+.equipe h3{
+    margin-top: 1.5%;
+}
+
+.equipe h4{
+    color: #fff;
+    text-align: center;
+    animation-name: title;
+    animation: title 4s infinite;
+}
+
+@keyframes title{
+    10% {color:#8fddc3; }
+    50% {color:#e0edde; }
+    100% {color:#cbefc6; }
+}
+
+.equipe p{
+    color: #fff;
+    font-size: 17pt;
+    text-align: center;
+}
+
+#video {
+    object-fit: cover;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.footer{
+    background-color: #000;
+    color: #DCDCDC;
+}
+
+.footer h5{
+   text-align: center;
+   padding-top: 1%;
+}
+
+.footer p{
+    margin-left: 1%;
+}
+
+.footer svg{
+  margin-left: 0.5%;
+}
