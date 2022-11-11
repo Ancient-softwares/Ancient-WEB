@@ -292,6 +292,34 @@ margin-bottom: 0.5em;
 
 }
 
+.projetos h2{
+  margin-top: 1%;
+}
+
+.ProjwtosBox {
+  margin-top: 0.5%;
+ background-color:#0e1924;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5%;
+}
+
+.ProjwtosBox img{
+  width:55%;
+  height: 80%;
+  margin-left: 22%;
+  cursor: pointer;
+}
+
+.projetoCard h3{
+  color: #F6F6F6;
+  text-align: center;
+}
+
+.projetoCard{
+  padding: 2%;
+}
+
 .Equipe{
   background-image: url("../IMG/spaceEquipe.jpg"); 
   background-repeat: no-repeat;
